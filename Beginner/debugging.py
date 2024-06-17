@@ -23,15 +23,26 @@
 # else:
 #     print("not leap year")
 
-year = int(input())  #missing int input
+# year = int(input())  #missing int input
 
-if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print("Leap year")
-        else:
-            print("not leap year")
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print("Leap year")
+#         else:
+#             print("not leap year")
+#     else:
+#         print("leap year")
+# else:
+#     print("not leap year")
+
+target = int(input())
+for number in range(1, target + 1):
+    if number % 3 == 0 or number % 5 == 0:
+        print("fizz buzz")
+    if number % 3 == 0:
+        print("Fizz")
+    if number % 5 == 0:
+        print("Buzz")
     else:
-        print("leap year")
-else:
-    print("not leap year")
+        print([number])
