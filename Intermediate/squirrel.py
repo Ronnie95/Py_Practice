@@ -1,8 +1,15 @@
-import pandas as pd             
+import sys
+import matplotlib
+matplotlib.use('Agg')
 
+import pandas as pd
+import matplotlib.pyplot as plt
 sq = pd.read_csv('./intermediate/squirrel.csv')
 
-# print(sq)
+print(sq)
+
+sq.plot()
+plt.show()
 
 # print(sq.head(10)) prints the first # of  specified rows
 
@@ -11,6 +18,6 @@ sq = pd.read_csv('./intermediate/squirrel.csv')
 # print(sq.info())
 
 
-new_sq = sq.dropna()
+# new_sq = sq.dropna()
 
-print(new_sq)
+# print(new_sq)
