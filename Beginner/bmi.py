@@ -1,5 +1,5 @@
-height = input()
-weight = input()
+height = input(55)
+weight = input(55)
 
 weight_as_int = int(weight)
 height_as_float = float(height)
